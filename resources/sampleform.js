@@ -1,56 +1,44 @@
-export const sampleForm = {
-  ammount: {
+module.exports = [
+  {
     fieldId: 'ammount',
-    label: 'Liczba Opakowań:',
     fieldValue: '0',
     validation: ['isEmpty', 'isInteger'],
-    classes: [],
-    type: 'number',
-    valid: 'true'
+    valid: true,
+    isRequired: true
   },
-  phone: {
+  {
     fieldId: 'phone',
-    label: 'Telefon:',
-    fieldValue: '',
+    fieldValue: '123456',
     validation: ['isEmpty', 'isInteger'],
-    classes: [],
-    type: 'number',
-    valid: 'true'
+    valid: true,
+    isRequired: true
   },
-  notes: {
+  {
     fieldId: 'notes',
-    label: 'Uwagi dodatkowe:',
     fieldValue: '',
     validation: ['isEmpty', 'isLongEnough'],
-    classes: [],
-    type: 'textarea',
-    valid: 'true'
+    valid: true,
+    isRequired: true
   },
-  email: {
+  {
     fieldId: 'email',
-    label: 'E-mail:',
-    fieldValue: '',
+    fieldValue: '111@gmail.com',
     validation: ['isEmpty', 'isEmail'],
-    classes: [],
-    type: 'text',
-    valid: 'true'
+    valid: true,
+    isRequired: true
   },
-  nip: {
+  {
     fieldId: 'nip',
-    label: 'NIP:',
     fieldValue: '',
-    validation: ['isEmpty', 'isInteger'],
-    classes: [],
-    type: 'text',
-    valid: 'true'
+    validation: ['isEmpty', 'isNip'],
+    valid: true,
+    isRequired: true
   },
-  postcode: {
+  {
     fieldId: 'postcode',
-    label: 'Kod pocztowy:',
-    fieldValue: '',
+    fieldValue: '11-000',
     validation: ['isEmpty', 'isPostCode'],
-    classes: [],
-    type: 'text',
-    valid: 'true'
+    valid: true,
+    isRequired: true
   }
-};
+];

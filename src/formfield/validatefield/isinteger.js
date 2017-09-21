@@ -1,5 +1,5 @@
-export default function isInteger(value) {
+module.exports = function isInteger(value) {
   const testValue = value.trim().replace(/ /g, '').replace(/-/g, '');
 
-  return Number.isInteger(testValue);
-}
+  return Number.isInteger(Number(testValue));
+};

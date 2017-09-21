@@ -1,11 +1,11 @@
-import isEmail from './isEmail';
-import isEmpty from './isEmpty';
-import isInteger from './isInteger';
-import isLongEnough from './isLongEnough';
-import isNip from './isnip';
-import isPostCode from './isPostCode';
+const isEmail = require('./isEmail');
+const isEmpty = require('./isEmpty');
+const isInteger = require('./isInteger');
+const isLongEnough = require('./isLongEnough');
+const isNip = require('./isnip');
+const isPostCode = require('./isPostCode');
 
-export const validateField = {
+module.exports = {
   isEmail,
   isEmpty,
   isInteger,

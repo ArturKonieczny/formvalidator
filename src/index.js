@@ -1,1 +1,3 @@
-export { FormField } from './formField';
+const VForm = require('./vform');
+
+module.exports = VForm;

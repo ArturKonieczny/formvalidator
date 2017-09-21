@@ -1,6 +1,10 @@
 /* eslint-disable no-magic-numbers */
-export default function isNip(value) {
+module.exports = function isNip(value) {
   const testValue = value.trim().replace(/ /g, '').replace(/-/g, '');
+
+  if (testValue.length < 10) {
+    return false;
+  }
   const weights = [6, 5, 7, 2, 3, 4, 5, 6, 7];
   let controlSum = 0;
 
@@ -13,4 +17,4 @@ export default function isNip(value) {
   }
 
   return true;
-}
+};
