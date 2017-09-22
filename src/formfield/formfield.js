@@ -5,7 +5,7 @@ module.exports = class FormField {
     this.fieldId = fieldConfig.fieldId;
     this.fieldValue = fieldConfig.fieldValue || '';
     this.validation = fieldConfig.validation || [];
-    this.valid = fieldConfig.valid || false;
+    this.valid = fieldConfig.valid || true;
     this.isRequired = fieldConfig.isRequired || false;
   }
 

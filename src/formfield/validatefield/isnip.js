@@ -2,7 +2,7 @@
 module.exports = function isNip(value) {
   const testValue = value.trim().replace(/ /g, '').replace(/-/g, '');
 
-  if (testValue.length < 10) {
+  if (testValue.length !== 10) {
     return false;
   }
   const weights = [6, 5, 7, 2, 3, 4, 5, 6, 7];
