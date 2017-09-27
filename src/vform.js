@@ -11,6 +11,10 @@ module.exports = class VForm {
     });
   }
   /* eslint-disable guard-for-in*/
+  /**
+   * Checks if all the form fields are valid.
+   * @return {Boolean} True if all fields are Valid
+   */
   checkForm() {
     for (const formFieldId in this.form) {
       const formField = this.form[formFieldId];
@@ -27,6 +31,10 @@ module.exports = class VForm {
     return this.isValid;
   }
 
+  /**
+   * Validates all form fields.
+   * @return {Boolean} True if all fields are valid
+   */
   validateForm() {
     for (const formFieldId in this.form) {
       const formField = this.form[formFieldId];
@@ -40,6 +48,11 @@ module.exports = class VForm {
     return this.checkForm();
   }
 
+  /**
+   * Returns a form object field that was created with config.
+   * @param  {String} fieldName Name of form field
+   * @return {Object}           FormField Object
+   */
   getFormField(fieldName) {
     return this.form[fieldName];
   }

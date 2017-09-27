@@ -9,6 +9,10 @@ module.exports = class FormField {
     this.isRequired = fieldConfig.isRequired || false;
   }
 
+  /**
+   * Validates form field.
+   * @return {Boolean} True if form field is valid
+   */
   validate() {
     let isValid = true;
 
@@ -27,6 +31,13 @@ module.exports = class FormField {
     return this.valid;
   }
 
+  /**
+   * Sets the given property value to be equal newValue.
+   * If the property name is 'fieldValue', form field is validated.
+   * @param {String} property Property name
+   * @param {String} newValue New value.
+   * @Returns {None} Nothing
+   */
   set(property, newValue) {
     this[property] = newValue;
     if (property === 'fieldValue') {

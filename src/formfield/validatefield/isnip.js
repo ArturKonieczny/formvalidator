@@ -1,3 +1,8 @@
+/**
+ * Checks if given value is NIP.
+ * @param  {String}  value Value to be tested
+ * @return {Boolean}       True if valid
+ */
 /* eslint-disable no-magic-numbers */
 module.exports = function isNip(value) {
   const testValue = value.trim().replace(/ /g, '').replace(/-/g, '');

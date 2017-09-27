@@ -1,10 +1,10 @@
 /**
- * Checks if given value is an integer.
+ * Checks if given value is positive.
  * @param  {String}  value Value to be tested
  * @return {Boolean}       True if valid
  */
-module.exports = function isInteger(value) {
+module.exports = function isPositive(value) {
   const testValue = value.trim().replace(/ /g, '');
 
-  return Number.isInteger(Number(testValue));
+  return Number(testValue) >= 0;
 };
