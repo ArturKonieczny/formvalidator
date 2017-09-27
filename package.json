@@ -1,7 +1,7 @@
 {
   "name": "formvalidator",
   "version": "1.0.1",
-  "description": "",
+  "description": "Simple package for easy form validation.",
   "main": "index.js",
   "scripts": {
     "test": "mocha --reporter=list spec/**/*.spec.js",
