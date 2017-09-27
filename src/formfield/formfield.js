@@ -32,17 +32,14 @@ module.exports = class FormField {
   }
 
   /**
-   * Sets the given property value to be equal newValue.
-   * If the property name is 'fieldValue', form field is validated.
+   * Sets the given property value to be equal newValue and then runs .validate();
    * @param {String} property Property name
    * @param {String} newValue New value.
    * @Returns {None} Nothing
    */
   set(property, newValue) {
     this[property] = newValue;
-    if (property === 'fieldValue') {
-      this.validate();
-    }
+    this.validate();
   }
 
   get(property) {

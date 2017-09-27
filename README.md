@@ -102,7 +102,7 @@ Validates the field using validation functions provided in *settings*.
 .set(property, value);
 ```
 
-If set property is 'fieldValue', .validate() will be run.
+After setting new property value, .validate() will be run.
 
 ```js
 .get(property);
@@ -119,3 +119,8 @@ isNip(value);
 isPositive(value);
 isPostCode(value);
 ```
+
+## TO DO
+
+1. Validation functions api
+2. Passing more than one arguments to validation functions
