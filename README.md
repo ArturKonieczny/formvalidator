@@ -1,5 +1,7 @@
 # Form Validator
 
+Simple package for easy form validation.
+
 ## Installation
 
 ```bash
