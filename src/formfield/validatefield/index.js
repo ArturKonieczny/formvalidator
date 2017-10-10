@@ -4,6 +4,7 @@ const isInteger = require('./isInteger');
 const isLongEnough = require('./isLongEnough');
 const isNip = require('./isnip');
 const isPostCode = require('./isPostCode');
+const isPositive = require('./isPositive');
 
 module.exports = {
   isEmail,
@@ -11,5 +12,6 @@ module.exports = {
   isInteger,
   isLongEnough,
   isNip,
-  isPostCode
+  isPostCode,
+  isPositive
 };
